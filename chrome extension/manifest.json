@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Infinity-new-tab",
+  "description": "New tab extension",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "nature1.png",
+    "default_popup": "popup.html"
+  },
+
+  // "content_scripts": [
+  //   {
+  //     "matches": ["http://*/*","https://*/*"]
+  //     "css": ["mystyles.css"]
+  //     // "js": ["myscript.js"]
+  //   }
+  // ],
+
+    "chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+
+  "icons":{ "64": "nature1.png" },
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
